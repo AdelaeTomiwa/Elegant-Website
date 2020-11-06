@@ -224,6 +224,11 @@ main h1 {
    justify-content: center;
    flex-direction: column;
    text-align: center;
+   transition: all ease 0.5s;
+}
+
+.work-content:hover {
+   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .work-content h4 {
@@ -237,6 +242,10 @@ main h1 {
 }
 
 /* Contact */
+.contact {
+   height: 100vh;
+   margin-bottom: 2rem;
+}
 .contact-header h1 {
    font-size: 3.5rem;
    text-align: center;
@@ -253,6 +262,7 @@ main h1 {
    margin: 1rem 0;
    cursor: pointer;
    transition: all ease 1s;
+   border: 3px solid #fff;
 }
 
 .contacts div:hover {
@@ -263,6 +273,61 @@ main h1 {
 
 .contacts div:hover span {
    color: #fff;
+}
+
+.contact .form button {
+   padding: 0.5rem 2rem;
+   width: 100%;
+   font-weight: bold;
+   font-size: 1rem;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: #fff;
+   border: 3px solid #fff;
+   cursor: pointer;
+   transition: all ease 1s;
+}
+
+.contact .form button:hover {
+   background-color: rgba(0, 0, 0, 0.7);
+   border: 3px solid #1ab6cf;
+   color: #1ab6cf;
+}
+
+/* Form */
+.form-header h1 {
+   font-size: 3.5rem;
+   text-align: center;
+   margin: 2rem 0;
+}
+
+form {
+   margin-top: 1rem;
+}
+
+form div input,
+form div button {
+   padding: 0.5rem 1rem;
+   margin: 0.5rem 0;
+   font-size: 1rem;
+   font-weight: 600;
+   width: 100%;
+}
+
+form div button {
+   padding: 0.5rem 2rem;
+   width: 100%;
+   font-weight: bold;
+   font-size: 1rem;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: #fff;
+   border: 3px solid #fff;
+   cursor: pointer;
+   transition: all ease 1s;
+}
+form div button:hover {
+   background-color: rgba(0, 0, 0, 0.7);
+   border: 3px solid #1ab6cf;
+   color: #1ab6cf;
 }
 
 /* Footer */
@@ -323,6 +388,15 @@ footer {
    }
 
    .contacts {
+      margin-bottom: 5rem;
+   }
+
+   /* Form */
+   .form-header h1 {
+      font-size: 3rem;
+   }
+
+   .form {
       margin-bottom: 5rem;
    }
 }
